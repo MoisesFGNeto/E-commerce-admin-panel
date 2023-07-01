@@ -76,15 +76,20 @@ export default function ProductForm({
 
   const propertiesToFill = [];
   if (categories.length > 0 && category) {
-    let catInfo = categories.find(({_id}) => _id === category)
-    propertiesToFill.push(...catInfo.properties);
-    while(catInfo?.parent?._id){
-      const parentCat = categories.find(({_id}) => _id === catInfo?.parent?._id);
-      propertiesToFill.push(...parentCat.properties);
-      catInfo = parentCat;
+    let catInfo = categories.find(({_id}) => _id === category);
+    if (catInfo) {
+      propertiesToFill.push(...catInfo.properties);
+      while (catInfo.parent?._id) {
+        const parentCat = categories.find(({ _id }) => _id === catInfo.parent?._id);
+        if (parentCat) {
+          propertiesToFill.push(...parentCat.properties);
+          catInfo = parentCat;
+        } else {
+          break;
+        }
+      }
     }
   }
-
   return (
     <form onSubmit={saveProduct}>
         <label>Product name</label>
@@ -103,7 +108,7 @@ export default function ProductForm({
           ))}
         </select>
         {propertiesToFill.length > 0 && propertiesToFill.map(p => (
-          <div className="">
+          <div key={p.name} className="">
             <label>{p.name[0].toUpperCase() + p.name.substring(1)}</label>
             <div>
               <select 
@@ -112,7 +117,7 @@ export default function ProductForm({
                 setProductProp(p.name, ev.target.value)}
               >
                 {p.values.map(v => (
-                  <option value={v}>{v}</option>
+                  <option key={v} value={v}>{v}</option>
                 ))}
               </select>
             </div>
