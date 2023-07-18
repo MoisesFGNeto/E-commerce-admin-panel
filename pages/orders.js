@@ -37,12 +37,12 @@ export default function OrdersPage(){
                 {order.streetAddress} {order.country}
               </td>
               <td>
-                {order.line_items.map(l =>(
-                  <>
-                    {l.price_data?.product_data?.name} x {l.quantity} <br/>
-                  </>
-                ))}
-              </td>
+          {order.line_items.map((l, index) => ( 
+            <div key={index}>
+              {l.price_data?.product_data?.name} x {l.quantity} <br />
+            </div>
+          ))}
+        </td>
             </tr>
           ))}
         </tbody>
