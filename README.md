@@ -16,5 +16,7 @@ To access the admin panel, please follow these steps:
 
 Visit the page and log in using the Google provider.
 Use the following admin account credentials:
+
 Email: myecommerceadm2023@gmail.com
+
 Password: ecommerce_test
