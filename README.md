@@ -12,9 +12,5 @@ The project offers a comprehensive admin panel that allows users to manage their
 The admin panel enables users to access and view information about the orders received in the online store.
 
 ### Accessing the Admin Panel
-To access the admin panel, please follow these steps:
+To access the admin panel, please log in using the Google provider.
 
-1. Visit the page and log in using the Google provider.
-2. Use the following admin account credentials:
-   - Email: myecommerceadm2023@gmail.com
-   - Password: ecommerce_test
