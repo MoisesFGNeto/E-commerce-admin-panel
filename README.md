@@ -2,7 +2,7 @@
 This project is currently a work in progress and is not yet completed. However, it provides an overview of its functionalities and how it works.
 
 ## Description
-This project is developed using Next.js, AWS S3 for file storage, MongoDB for the database, and deployed on Vercel.
+This project is developed using Next.js, Tailwind, AWS S3 for file storage, MongoDB for the database, and deployed on Vercel.
 
 ## Features
 ### Admin Panel:
