@@ -32,7 +32,7 @@ export default function ProductForm({
     async function saveProduct(ev) {
       ev.preventDefault();
       const data = {
-        title,description,price,images, category, 
+        title,description,price,images,category, 
         properties: productProperties};
       if (_id) {
         //update
@@ -41,7 +41,7 @@ export default function ProductForm({
         //create
         await axios.post('/api/products', data);
       }
-      setGoToProducts(true);
+     setGoToProducts(true);
     }
     if (goToProducts){
       router.push('/products');
@@ -108,7 +108,7 @@ export default function ProductForm({
           ))}
         </select>
         {propertiesToFill.length > 0 && propertiesToFill.map(p => (
-          <div key={p.name} className="">
+          <div key={p.name}>
             <label>{p.name[0].toUpperCase() + p.name.substring(1)}</label>
             <div>
               <select 
@@ -116,8 +116,8 @@ export default function ProductForm({
                 onChange={ev => 
                 setProductProp(p.name, ev.target.value)}
               >
-                {p.values.map(v => (
-                  <option key={v} value={v}>{v}</option>
+                {p.values.map((v, index) => (
+                  <option key={index} value={v}>{v}</option>
                 ))}
               </select>
             </div>
@@ -132,8 +132,8 @@ export default function ProductForm({
             setList={updateImagesOrder}
             className="flex flex-wrap gap-1"
           >
-            {!!images?.length && images.map(link => (
-              <div key={link} className="h-24 bg-white p-4 shadow-sm rounded-sm border-gray-200">
+            {!!images?.length && images.map((link, index) => (
+              <div key={index} className="h-24 bg-white p-4 shadow-sm rounded-sm border-gray-200">
                 <img src={link} alt="" className="rounded-lg"/>
               </div>
             ))}
