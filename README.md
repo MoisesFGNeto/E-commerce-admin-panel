@@ -12,9 +12,8 @@ The E-commerce Admin Panel is built using modern technologies to provide a seaml
 <img height="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png"> 
 <img height="50" src="https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png">
 <img height="50" src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png">
-<Image
+<Image height="50" width="50" 
   src="https://assets.vercel.com/image/upload/front/zeit/og.png"
-  height={20}
 />
 
 ## Key Features
