@@ -5,7 +5,7 @@ import clientPromise from "@/lib/mongodb";
 import { Admin } from '@/models/Admin';
 
 async function isAdminEmail(email) {
-  return true;
+  // return true; enable all users with google accounts to login
   return !! (await Admin.findOne({email}));
 }
 
