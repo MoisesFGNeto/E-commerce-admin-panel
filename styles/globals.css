@@ -19,6 +19,10 @@ h1{
     @apply text-gray-800 mb-4 text-xl;
 }
 
+h2 {
+    @apply text-gray-800 mt-6 mb-2 text-lg;
+}
+
 label{
     @apply text-gray-600 text-sm;
 }
@@ -54,3 +58,32 @@ table.basic a{
 .btn-default {
     @apply bg-white text-gray-800 px-4 py-1 rounded-sm border border-gray-200 shadow-sm;
 }
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+@layer base {
+    .login-form {
+        @apply mt-40 text-center m-auto p-12 bg-bgGray rounded-lg
+    }
+}
+@layer utilities {
+    @media (max-width: 640px) {
+        .login-form {
+            @apply py-12 px-4
+            mt-32
+        }
+    }
+    @media (max-width: 380px) {
+        .login-form {
+            @apply py-4 px-2
+            mt-20
+        }
+        .login-form h1{
+            @apply text-xl
+        }
+        }
+    }
+
+   

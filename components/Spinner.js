@@ -1,7 +1,14 @@
 import { MoonLoader } from "react-spinners";
 
-export default function Spinner() {
+export default function Spinner({fullWidth}) {
+  if (fullWidth) {
     return (
-        <MoonLoader color={'#1E3A8A'} speedMultiplier={1}/>
+      <div className="w-full flex justify-center">
+         <MoonLoader color={'#1E3A8A'} speedMultiplier={1}/>
+      </div>
+    );
+  }
+    return (
+      <MoonLoader color={'#1E3A8A'} speedMultiplier={1}/>
     );
 }

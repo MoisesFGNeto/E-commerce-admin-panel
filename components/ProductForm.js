@@ -22,10 +22,13 @@ export default function ProductForm({
     const [goToProducts, setGoToProducts]= useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const [categories, setCategories] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
     useEffect(() => {
+      setIsLoading(true);
       axios.get('/api/categories').then(result => {
         setCategories(result.data);
+        setIsLoading(false);
       })
     },[]);
 
@@ -107,6 +110,11 @@ export default function ProductForm({
             <option key={c._id} value={c._id}>{c.name}</option>
           ))}
         </select>
+        {isLoading && (
+          <div className="py-10">
+            <Spinner fullWidth={1}/>
+          </div>
+        )}
         {propertiesToFill.length > 0 && propertiesToFill.map(p => (
           <div key={p.name}>
             <label>{p.name[0].toUpperCase() + p.name.substring(1)}</label>
@@ -144,7 +152,7 @@ export default function ProductForm({
             </div>
           )}
           <label 
-            className="w-24 h-24 rounded-lg cursor-pointer text-center flex flex-col items-center justify-center text-sm gap-1 text-primary rounded-sm bg-white shadow-sm border border-primary">
+            className="w-24 h-24 rounded-lg cursor-pointer text-center flex flex-col items-center justify-center text-sm gap-1 text-primary bg-white shadow-sm border border-primary">
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
