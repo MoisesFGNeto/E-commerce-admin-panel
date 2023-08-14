@@ -8,13 +8,11 @@ The E-commerce Admin Panel is built using modern technologies to provide a seaml
 
 ## Technologies Used
 
-<div style="display: flex; align-items: center;">
-  <img style="margin-right: 10px;" height="50" src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704" alt="Icon 1">
-  <img style="margin-right: 10px;" height="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Icon 2">
-  <img style="margin-right: 10px;" height="50" src="https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png" alt="Icon 3">
-  <img style="margin-right: 10px;" height="50" src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png" alt="Icon 4">
-  <img style="margin-right: 10px;" height="50" src="https://assets.vercel.com/image/upload/front/zeit/og.png" alt="Icon 5">
-</div>
+<p align="start">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,aws,mongodb,vercel,github" />
+  </a>
+</p>
 
 ## Key Features
 
