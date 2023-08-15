@@ -38,8 +38,8 @@ To explore the current features of the E-commerce Admin Panel, follow these step
 Please note that this project is actively evolving, and we value your feedback and contributions. Feel free to raise issues or submit pull requests to help us enhance the E-commerce Admin Panel.
 
 **Demo Account for Admin Access:**
-- Username: admin@example.com
-- Password: admin123
+- Username: myecommerceadm2023@gmail.com
+- Password: ecommerce_test
 
 **Link access:**
 [Demo](https://my-ecommerce-adm-2023.vercel.app/)
