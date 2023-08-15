@@ -8,17 +8,19 @@ import Link from "next/link";
 export default function Layout({children}) {
   const [showNav, setShowNav] = useState(false);
   const { data: session } = useSession(); 
+  
+  async function login() {
+    await signIn('google');
+  }
   if (!session) {
     return (
       <div className='bg-gray-800 w-screen h-screen flex items-center'>
         <div className=" login-form">
           <h1 className="text-3xl font-bold mb-4">My-Ecommerce Login</h1>
           <button 
-            onClick={() => signIn('google')} 
+            onClick={login}  
             className="p-2 px-4 mt-5 rounded-lg bg-primary border-0 text-white" >
-             Login With {" "}
-            <FontAwesomeIcon icon={faGoogle} style={{ color: "#ffffff" }}/>
-             oogle
+             Login With <FontAwesomeIcon icon={faGoogle} className="google-icon" />oogle
           </button>
         </div>
       </div>
