@@ -25,21 +25,24 @@ Security is paramount. Our admin access management feature lets you maintain con
 ### 3. Product Customization:
 Tailor front-end user experience effortlessly. Highlight specific products on the home page and configure shipping prices transparently, ensuring a seamless shopping experience for customers.
 
-
 ## Getting Started
 
 To explore the current features of the E-commerce Admin Panel, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install dependencies using `npm install` or `yarn install`.
-3. Configure AWS S3 credentials and MongoDB connection settings in the appropriate configuration files.
-4. Run the application locally using `npm run dev` or `yarn dev`.
+3. Make sure to set the necessary environment variables. Configure AWS S3 and Google Cloud credentials, as well as MongoDB connection settings, in the appropriate configuration files. 
+4. Run the application locally using `npm run dev` or `yarn dev` on port:localhost:3000.
 
-Please note that this project is actively evolving, and we value your feedback and contributions. Feel free to raise issues or submit pull requests to help us enhance the E-commerce Admin Panel.
+## Demo /  Account for Admin Access:
+Please utilize the following Google credentials to access the admin privileges and explore the functionalities:
 
-**Demo Account for Admin Access:**
 - Username: myecommerceadm2023@gmail.com
 - Password: ecommerce_test
+  
+Feel free to navigate around and explore the various features and capabilities. Should you have any questions or encounter any issues, don't hesitate to reach out. Your engagement is greatly appreciated!
 
-**Link access:**
-[Demo](https://my-ecommerce-adm-2023.vercel.app/)
+**Demo on this**
+  [Link](https://my-ecommerce-adm-2023.vercel.app/)
+
+
