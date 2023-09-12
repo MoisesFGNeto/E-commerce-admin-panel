@@ -17,6 +17,13 @@ export default function Layout({children}) {
       <div className='bg-gray-800 w-screen h-screen flex items-center'>
         <div className=" login-form">
           <h1 className="text-3xl font-bold mb-4">My-Ecommerce Login</h1>
+          <div>
+          <p className="text-bold">As admin please login with this google credential: </p>
+          <p className="text-sm ">Email: <span className="text-decoration-line: underline">myecommerceadm2023@gmail.com</span></p>
+          <p className="text-sm ">Password: <span className="text-decoration-line: underline">ecommerce_test</span></p>
+          </div>
+          
+
           <button 
             onClick={login}  
             className="p-2 px-4 mt-5 rounded-lg bg-primary border-0 text-white" >
